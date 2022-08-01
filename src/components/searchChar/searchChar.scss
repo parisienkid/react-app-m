@@ -1,0 +1,49 @@
+@import '../../style/variables.scss';
+
+.search {
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    width: 425px;
+    margin-top: 30px;
+    z-index: 5;
+    background-color: #fff;
+    label {
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    &__input {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 250px;
+        height: 38px;
+        border: none;
+        padding-left: 10px;
+    }
+    .button {
+        margin-left: 25px;
+    }
+    &__status {
+        width: 100%;
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &_red {
+        color: $main-color;
+    }
+}
