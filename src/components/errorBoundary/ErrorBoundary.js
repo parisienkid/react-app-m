@@ -2,8 +2,16 @@ import { Component } from "react/cjs/react.production.min";
 import ErrorMessage from "../error/ErrorMessage";
 
 class ErrorBoundary extends Component {
-    state = {
-        error: false,
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            error: false,
+        }
+    }
+
+    static getDerivedStateFroError(error) {
+        return {error}
     }
 
     render() {
